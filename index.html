@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Melisa Portfolio</title>
+    <link rel="stylesheet" href="my-bulma-project.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar is-transparent is-fixed-top">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="#hero" class="navbar-item has-text-white">Melisa</a>
+          <span class="navbar-burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="#hero" class="navbar-item has-text-light">Mit CV</a>
+            <a href="#mit-arbejde" class="navbar-item has-text-white">Mit Arbejde</a>
+            <a href="#om-mig" class="navbar-item has-text-white">Om Mig</a>
+            <a href="#kontakt" class="navbar-item has-text-white">Kontakt</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero is-fullheight is-flex is-align-items-center is-justify-content-center has-text-white">
+      <div class="container has-text-centered">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <figure class="image is-128x128 is-inline-block">
+          <img class="is-rounded" src="images/melisa.png" alt="Billede af Melisa">
+        </figure>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <h1 class="title">Hej, jeg er <span class="has-text-light">Melisa</span></h1>
+        <p class="subtitle"><span class="has-text-light">Jeg designer unikke oplevelser og skaber visuelle identiteter. </span></p>
+        <div class="buttons is-centered">
+          <a href="#mit-arbejde" class="button is-outlined">Se mit arbejde</a>
+          <a href="dokumenter/Melisa_cv.pdf" download class="button is-outlined">Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mit Arbejde Section -->
+    <section id="mit-arbejde" class="section has-text-white">
+      <div class="container has-text-centered">
+        <h2 class="title">Mit Arbejde</h2>
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <figure class="image is-4by3">
+              <img src="images/Yaslashes.png" alt="Logo">
+            </figure>
+            <h3 class="subtitle">Logo Design</h3>
+          </div>
+          <div class="column is-half">
+            <figure class="image is-4by3">
+              <img src="images/visitkort.png" alt="Visitkort">
+            </figure>
+            <h3 class="subtitle">Visitkort</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Om Mig Section -->
+    <section id="om-mig" class="section">
+      <div class="container has-text-centered">
+        <h2 class="title">Om Mig</h2>
+        <p>Jeg er multimediedesigner og studerer webudvikling med fokus på frontend og UX/UI design.</p>
+      </div>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section id="kontakt" class="section">
+      <div class="container has-text-centered">
+        <h2 class="title">Kontakt mig</h2>
+        <form action="mailto:melisa_oksum@hotmail.com" method="post">
+          <div class="field">
+            <div class="control">
+              <input class="input" type="text" name="name" placeholder="Dit navn" required>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <input class="input" type="email" name="email" placeholder="Din email" required>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <textarea class="textarea" name="message" placeholder="Din besked" required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="button is-outlined">Send Besked</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

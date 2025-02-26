@@ -1,0 +1,78 @@
+// Primære farver
+$primary: #ff8a00;
+$secondary: #e52e71;
+$gradient-bg: linear-gradient(45deg, $primary, $secondary);
+$text-light: #fff;
+$text-dark: #333;
+$transparent: transparent; 
+
+// Bulma custom farver
+$navbar-background-color: $transparent;
+
+// Path til Bulma's sass-folder
+@use "bulma/sass" with (
+  $family-primary: '"Nunito", sans-serif',
+  $primary: $primary,
+  $light: $text-light,
+  $control-border-width: 2px,
+  $input-shadow: none
+);
+
+// Import af Google Font
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+// Global styling
+html, body {
+  background: $gradient-bg;
+  color: $text-light;
+}
+
+// Navigation
+.navbar {
+  background-color: $transparent !important;
+  box-shadow: none;
+  .navbar-item {
+    color: $text-light !important;
+    font-weight: bold;
+  }
+}
+
+// Hero sektion
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+// Knapper
+.button {
+  border: 1px solid $text-light;
+  color: $text-light;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  &:hover {
+    background: $gradient-bg;
+    color: $text-light;
+  }
+}
+
+
+
+// Kontaktformular
+form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: $transparent;
+  border-radius: 10px;
+}
+
+.input,
+.textarea {
+  background: $transparent;
+  color: $text-light;
+  border: 2px solid $text-light;
+}
+
